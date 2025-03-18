@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --primaryBlue: #234582;
-    --primaryRed: #cf4d3d;
+    --primaryRed: #cd4937;
     --black: #081021;
     --white: #fff;
     --bodyCopyDark: #39404d;
@@ -93,7 +93,6 @@
   li,
   a {
     font-size: var(--bodyFontSize);
-    line-height: 1.8em;
     margin: 0;
     text-wrap: pretty;
   }
@@ -151,8 +150,12 @@
     gap: 0.75rem;
     position: relative;
     z-index: 1;
-    transition: color 0.3s;
+    transition: color, transform 0.3s;
     border-radius: 32rem;
+  }
+  .cs-button-solid:hover,
+  .cs-button-border:hover {
+    transform: scale(0.95);
   }
   .skip {
     position: absolute;
@@ -941,7 +944,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    transition: color 0.3s, background-color 0.3s;
+    transition: transform 300ms;
     border-radius: 32rem;
   }
   #cs-navigation .cs-button-border .cs-icon {
