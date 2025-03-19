@@ -10,7 +10,7 @@
     overflow: hidden;
     position: relative;
     z-index: 10;
-    border-bottom-right-radius: 4rem;
+    border-bottom-right-radius: var(--sectionBorderRadius);
   }
   #hero-2274 .cs-container {
     width: 100%;
@@ -341,5 +341,245 @@
   #Hservices-2274 .cs-item:last-of-type {
     top: auto;
     bottom: 0;
+  }
+}
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1645 {
+    padding: var(--sectionPadding);
+    background-color: var(--primaryBlue);
+    border-radius: var(--sectionBorderRadius) 0 var(--sectionBorderRadius) 0;
+  }
+  #services-1645 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(2.5rem, 3.9vw, 4rem);
+  }
+  #services-1645 .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+  }
+  #services-1645 .cs-topper {
+    color: var(--bodyCopyLight);
+  }
+  #services-1645 .cs-title {
+    color: var(--white);
+  }
+  #services-1645 .cs-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--bodyCopyLight);
+  }
+  #services-1645 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #services-1645 .cs-card-group {
+    width: 100%;
+    max-width: 50.1875rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #services-1645 .cs-item {
+    list-style: none;
+    /* .cs-h3 and .cs-item-text both use text-align: inherit, so change the below to affect the whole item */
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    /* 20px - 48px */
+    padding: clamp(1.5rem, 3.2vw, 2rem);
+    background-color: var(--white);
+    border: 1px solid var(--extraBG);
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s;
+    /* 16px - 24px */
+    gap: clamp(1rem, 1.5vw, 1.5rem);
+    grid-column: span 12;
+    border-radius: 1rem;
+  }
+  #services-1645 .cs-icon {
+    width: 3rem;
+    height: auto;
+    margin: 0;
+    display: block;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-1645 .cs-h3 {
+    font-size: 1.25rem;
+    text-align: inherit;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--black);
+    transition: color 0.3s;
+  }
+  #services-1645 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyCopyDark);
+    opacity: 0.8;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1645 .cs-item {
+    flex-direction: row;
+    grid-column: span 6;
+  }
+}
+/* Large Desktop - 1024px */
+@media only screen and (min-width: 80rem) {
+  #services-1645 .cs-container {
+    flex-direction: row;
+  }
+  #services-1645 .cs-content {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/*-- -------------------------- -->
+<---       Why Choose Us        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-12 {
+    padding: var(--sectionPadding);
+  }
+  #why-choose-12 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #why-choose-12 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #why-choose-12 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primaryRed);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #why-choose-12 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--black);
+    position: relative;
+  }
+  #why-choose-12 .cs-text {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyCopyDark);
+  }
+  #why-choose-12 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+  #why-choose-12 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    max-width: 22.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  #why-choose-12 .cs-picture {
+    /* 68px - 88px */
+    width: clamp(4.25rem, 7vw, 5.5rem);
+    height: clamp(4.25rem, 7vw, 5.5rem);
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background-color: var(--primaryRed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #why-choose-12 .cs-picture img {
+    width: auto;
+    height: 2.625rem;
+    display: block;
+  }
+  #why-choose-12 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+  }
+  #why-choose-12 .cs-item-text {
+    font-size: 1rem;
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyCopyDark);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose-12 .cs-card-group {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

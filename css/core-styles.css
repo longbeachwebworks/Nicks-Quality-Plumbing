@@ -23,7 +23,8 @@
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(4rem, 2.1818rem + 7.2727vw, 8rem) 1rem;
+    --sectionBorderRadius: clamp(2rem, 1.0909rem + 3.6364vw, 4rem);
   }
   /* montserrat-regular - latin */
   @font-face {
@@ -86,6 +87,7 @@
   h4,
   h5,
   h6 {
+    text-transform: capitalize;
     margin: 0;
     color: var(--headerColor);
   }
@@ -107,7 +109,6 @@
     text-align: inherit;
     letter-spacing: 0.1em;
     font-weight: 700;
-    color: var(--primaryRed);
     margin-bottom: 0.25rem;
     display: block;
   }
