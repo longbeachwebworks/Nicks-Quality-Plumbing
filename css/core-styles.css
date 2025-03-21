@@ -187,7 +187,7 @@
     transition: transform 0.3s, background-color 0.3s;
   }
   #cs-navigation.cs-active .cs-link {
-    color: var(--primaryRed);
+    color: var(--white);
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;
@@ -546,7 +546,7 @@
     content: "";
     width: 0%;
     height: 2px;
-    background: var(--primaryRed);
+    background: var(--white);
     opacity: 1;
     display: block;
     position: absolute;
@@ -646,7 +646,7 @@
     content: "";
     width: 100%;
     height: 2px;
-    background: var(--primaryRed);
+    background: var(--white);
     opacity: 1;
     position: absolute;
     display: none;
